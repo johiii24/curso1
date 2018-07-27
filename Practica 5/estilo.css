@@ -32,6 +32,31 @@ p{
 }
 
 @media screen and (min-width: 600px){
+    
+    .js .navegacion{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        top: 43px;
+        left: 30px;
+        right: 30px;
+        background-color: #2D211F;
+    }
+
+    .js navegacion a{
+        padding: 5px 10px;
+        color: #FFF;
+        border-top: 1px solid rgba(255, 255, 255, .4);
+    }
+    
+    .js .navegacion.menu-desplegado{
+        max-height: 200px;
+    }
+}
+
+    @media screen and (min-width: 601px) {
+    
     .lanzador-menu{
         display: none;
     }
@@ -48,8 +73,7 @@ p{
     .navegacion li {
         display: inline-block;
         margin-right: 15px;
-        list-style: none;
-        text-decoration: none;
+        
     }
 
 }
